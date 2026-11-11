@@ -3,8 +3,8 @@
 HW02 資料分析與視覺化應用
 413085108 張亦筠
 
-網站：https://bailey-barr.github.io/115VIS-HW2-413085108--/
-GitHub：https://github.com/bailey-barr/115VIS-HW2-413085108--
+網站：https://bailey-barr.github.io/115VIS-HW2-413085108-YIYUN-JHANG/
+GitHub：https://github.com/bailey-barr/115VIS-HW2-413085108-YIYUN-JHANG
 
 00:00 台灣人海外打工趨勢
 00:10 官方資料與年度概況
