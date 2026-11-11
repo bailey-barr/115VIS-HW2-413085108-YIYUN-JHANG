@@ -8,6 +8,10 @@
 - 地圖：使用者提供的 world_110m.json，僅提供地理形狀。
 - GitHub：[專案倉庫](https://github.com/bailey-barr/115VIS-HW2-413085108--)。YouTube：**待上傳**，上傳後填入 config.js。
 
+## 線上網站
+
+[開啟互動網站](https://bailey-barr.github.io/115VIS-HW2-413085108--/)
+
 ## 本機執行
 
 Windows雙擊 `啟動網站.cmd`，保持視窗開啟，再瀏覽 http://127.0.0.1:4173 。結束時Ctrl+C。
