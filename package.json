@@ -4,6 +4,13 @@
   "private": true,
   "type": "module",
   "description": "DGBAS report dashboard with schematic Pacific map and d3-brush year selection",
-  "scripts": { "start": "node server.mjs", "dev": "node server.mjs", "check": "node --check app.js && node --check server.mjs" },
-  "engines": { "node": ">=18" }
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "check": "node --check app.js && node --check server.mjs",
+    "build": "node tools/build-runtime.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
 }

@@ -279,7 +279,7 @@
       $('load-state').hidden=true;$('dashboard').hidden=false;
     } catch(error) {
       $('load-state').setAttribute('role','alert');
-      $('load-state').textContent=`載入失敗：${error.message} 請使用「啟動網站.cmd」或 node server.mjs 啟動，勿直接雙擊 index.html。`;
+      $('load-state').textContent='圖表暫時無法載入，請重新整理頁面。';
       console.error(error);
     }
   }
