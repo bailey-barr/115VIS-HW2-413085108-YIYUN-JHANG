@@ -268,6 +268,14 @@
       state.year=rows.at(-1).year;
       state.range=[rows[0].year,rows.at(-1).year];
       setupControls();setupMap();setupBrush();render();
+      document.querySelectorAll('[data-period]').forEach(button => button.addEventListener('click', () => {
+        stopPlay(); hideTooltip(); state.region=null; state.mode='share';
+        const period=button.dataset.period.split(',').map(Number);
+        state.year=period[1];
+        brushGroup.call(yearBrush.move,period.map(brushScale));
+        render();
+        $('history').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});
+      }));
       $('load-state').hidden=true;$('dashboard').hidden=false;
     } catch(error) {
       $('load-state').setAttribute('role','alert');
