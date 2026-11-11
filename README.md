@@ -26,7 +26,7 @@ node server.mjs
 
 [完整首頁](docs/screenshot-desktop.png) · [手機版](docs/screenshot-mobile.png) · [刷選示範](docs/screenshot-brush.png)
 
-[操作影片](docs/demo.mp4)（1080p MP4、中文合成旁白、章節字幕）· [影片腳本](docs/video-script.md)
+[操作影片](docs/demo.mp4)（1080p MP4、靜音（無音軌）、章節字幕）· [影片腳本](docs/video-script.md)
 
 ## 刷選與範圍框選（d3-brush）
 
