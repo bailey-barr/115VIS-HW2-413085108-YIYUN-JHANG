@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const root=new URL('../',import.meta.url);
+const data=JSON.parse(fs.readFileSync(new URL('data/overseas-work.json',root),'utf8'));
+const rows=data.rows,keys=['總計','中國大陸(含港澳)','東南亞','美國','日本、南韓','其他'];
+assert.equal(data.source.publisher,'行政院主計總處');
+assert.equal(data.source.counts,'第11頁表6');assert.equal(data.source.rates,'第8頁表3');
+assert.equal(rows.length,26);assert.equal(new Set(rows.map(r=>r.year)).size,26);
+assert.equal(rows[0].year,88);assert.equal(rows.at(-1).year,113);
+for(const row of rows){for(const key of keys)assert.ok(row[key]===null||Number.isFinite(row[key])&&row[key]>=0);for(const value of Object.values(row.shares))assert.ok(value===null||value>=0&&value<=100);}
+assert.equal(rows[0].總計,null);assert.equal(rows[0]['中國大陸(含港澳)'],177);
+assert.equal(rows.find(r=>r.year===109)['日本、南韓'],null);
+assert.equal(rows.find(r=>r.year===110)['日本、南韓'],23);
+assert.equal(rows.at(-1).總計,666);assert.equal(rows.at(-1).officialGrowth,7.4);
+assert.equal(rows.at(-1).shares.美國,20.5);assert.equal(rows.at(-1).shares['中國大陸(含港澳)'],34.7);
+assert.equal(rows.find(r=>r.year===99).shares.美國,12.3);
+assert.equal(rows.find(r=>r.year===98).officialGrowth,null);
+assert.equal(rows.find(r=>r.year===111).總計,473);
+assert.equal(keys.slice(1).reduce((sum,k)=>sum+rows.find(r=>r.year===111)[k],0),472);
+const map=JSON.parse(fs.readFileSync(new URL('data/world_110m.json',root),'utf8'));
+assert.equal(map.type,'Topology');assert.ok(map.objects.countries.geometries.length>100);
+assert.equal(fs.readFileSync(new URL('data/source-report.pdf',root)).subarray(0,5).toString(),'%PDF-');
+assert.ok(!fs.existsSync(new URL('data/2222.csv',root)));
+console.log('PASS: report provenance, 26 years, missing values, published 7.4% growth and 20.5% US share, preserved table values, PDF and TopoJSON.');
