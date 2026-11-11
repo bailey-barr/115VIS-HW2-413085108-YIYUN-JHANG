@@ -4,7 +4,7 @@
 學號姓名：413085108 張亦筠  
 GitHub Repository：[https://github.com/bailey-barr/115VIS-HW2-413085108--](https://github.com/bailey-barr/115VIS-HW2-413085108--)（[GitHub Pages](https://bailey-barr.github.io/115VIS-HW2-413085108--/)）  
 作業網址：[台灣人海外打工趨勢](https://bailey-barr.github.io/115VIS-HW2-413085108--/)  
-影片網址：[視覺互動展示影片](https://bailey-barr.github.io/115VIS-HW2-413085108--/docs/demo.mp4](https://youtu.be/h3x3_but4dU)
+影片網址：[視覺互動展示影片][(https://bailey-barr.github.io/115VIS-HW2-413085108--/docs/demo.mp4](https://youtu.be/h3x3_but4dU)](https://youtu.be/h3x3_but4dU)
 資料來源：行政院主計總處[《113年國人赴海外工作人數統計新聞稿》](https://www.stat.gov.tw/News_Content.aspx?n=3703&s=235501)，114年11月19日發布。
 
 ## 專案執行成果展示
