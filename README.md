@@ -71,8 +71,7 @@ GitHub Repository：[https://github.com/bailey-barr/115VIS-HW2-413085108-YIYUN-J
 
 依原始資料分類，中國與日本的比較實際上是比較「中國大陸（含港澳）」與「日本、南韓」合併組，無法單獨析出日本；日韓自110年起單列，早期缺值不可當成零。
 
-理論參考：Colin Ware，[*Information Visualization: Perception for Design*](https://shop.elsevier.com/books/information-visualization/ware/978-0-12-812875-6)。本節依三階段模型整理專案應用，未將互動功能視為額外的處理階段。
-
+理論參考：Colin Ware，[*Information Visualization: Perception for Design*](https://shop.elsevier.com/books/information-visualization/ware/978-0-12-812875-6)。本節依三階段模型整理專案應用。
 
 ## 製作流程
 
@@ -81,7 +80,7 @@ GitHub Repository：[https://github.com/bailey-barr/115VIS-HW2-413085108-YIYUN-J
 3. **建立網頁版面**：以 HTML、CSS 與 JavaScript 製作綠色高對比儀表板，依序呈現年度摘要、地區地圖、歷年趨勢、Ware 理論及專案成果，並調整桌面與手機版面。
 4. **繪製太平洋地圖**：透過 TopoJSON Client 解析 `world_110m.json`，使用 D3 地理投影，以太平洋為中心並壓縮中央海域。只呈現指定的四組目的地，圓面積對應工作人數；地圖為非等比例示意，不能用於量測距離。
 5. **串接圖表互動**：以共用狀態管理年份、地區、顯示模式與年份範圍，連動地圖、排行、折線圖、年度控制及資料表。使用 `d3.brushX()` 實作框選、控制柄調整與選區平移。
-6. **加入 Ware 理論與分析情境**：以一致配色、高對比選取、折線趨勢及互動刷選協助辨識結構變化，加入疫情前、衝擊期、復甦期三個區間入口，探索供應鏈重組背景下的海外工作分布。
+6. **加入Colin Ware 理論與分析情境**：以一致配色、高對比選取、折線趨勢及互動刷選協助辨識結構變化，加入疫情前、衝擊期、復甦期三個區間入口，探索供應鏈重組背景下的海外工作分布。
 7. **測試與製作展示成果**：檢查資料、缺值、互動連動及手機版面，擷取三張成果圖片；錄製新版網站操作，輸出2分鐘、1080p、無音軌的靜音 MP4，搭配畫面字幕與章節說明。
 8. **本機與線上發布**：使用 Node.js 啟動本機 HTTP 服務；將網站檔案上傳 GitHub，由 GitHub Pages 發布 main 分支根目錄，確認網站、資料與影片連結正常。
 
