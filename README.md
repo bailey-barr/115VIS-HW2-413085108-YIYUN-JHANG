@@ -73,17 +73,6 @@ GitHub Repository：[https://github.com/bailey-barr/115VIS-HW2-413085108-YIYUN-J
 
 理論參考：Colin Ware，[*Information Visualization: Perception for Design*](https://shop.elsevier.com/books/information-visualization/ware/978-0-12-812875-6)。本節依三階段模型整理專案應用，未將互動功能視為額外的處理階段。
 
-## 本機執行
-
-Windows雙擊「啟動網站.cmd」，保持視窗開啟，再瀏覽 http://127.0.0.1:4173 。結束時按Ctrl+C。
-
-也可在專案目錄執行：
-
-```sh
-node server.mjs
-```
-
-不需npm install，D3與TopoJSON已附於vendor。勿直接雙擊index.html。若4173已占用，在PowerShell先執行 `$env:PORT = '4174'` 再啟動，並改瀏覽4174連接埠。
 
 ## 製作流程
 
